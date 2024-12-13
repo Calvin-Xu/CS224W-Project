@@ -1,0 +1,60 @@
+Building graph: 100%|████████████████████████████████████████| 5874261/5874261 [01:27<00:00, 67255.74it/s]
+Graph has 97238 nodes and 4974652 edges
+
+Number of COVID-19 host genes: 332
+First few host genes: ['Gene::8546', 'Gene::23476', 'Gene::6046', 'Gene::10283', 'Gene::124245']
+
+Number of coronavirus-related host genes: 129
+First few related host genes: ['Gene::2931', 'Gene::2932', 'Gene::26986', 'Gene::8761', 'Gene::3178']
+
+Results written to gene_neighbors.csv
+
+Summary statistics:
+gene_set             neighbor_type
+COVID-19             first_hop        16787
+                     second_hop       35448
+                     seed               332
+coronavirus-related  first_hop        13538
+                     second_hop       38051
+                     seed               118
+dtype: int64
+Found 451 drugs in DRKG
+
+First 5 drugs found in DRKG:
+Compound::DB00003: {'treatment_data': {'External Clinical Trials': {'Start Date': datetime.datetime(2020, 3, 31, 0, 0), 'Drug': 'Dornase alfa', 'Title': 'Nebulized In-line Endotracheal Dornase Alfa and Albuterol Administered to Mechanically Ventilated COVID-19 Patients : A Case Series', 'Purpose': 'Basic Science', 'Phase': 'Not Available', 'Status': 'Active Not Recruiting', 'Identifier': 'NCT04387786'}}}
+Compound::DB00005: {'gene_set': 'coronavirus-related', 'neighbor_type': 'second_hop', 'treatment_data': {'External Clinical Trials': {'Start Date': datetime.datetime(2020, 3, 27, 0, 0), 'Drug': 'Etanercept', 'Title': 'Evaluation the efficacy of Tumor Necrosis Factor alpha inhibitor in COVID-19 outcomes : a prospective clinical trial study.', 'Purpose': 'Treatment', 'Phase': '2, 3', 'Status': 'Recruiting', 'Identifier': 'IRCT20200312046749N1'}}}
+Compound::DB00006: {'gene_set': 'coronavirus-related', 'neighbor_type': 'second_hop', 'treatment_data': {'External Clinical Trials': {'Start Date': datetime.datetime(2020, 6, 28, 0, 0), 'Drug': 'Bivalirudin', 'Title': 'Anticoagulation in Patients Suffering From COVID-19 Disease-The Anti-Co Trial', 'Purpose': 'Supportive Care', 'Phase': 4, 'Status': 'Active Not Recruiting', 'Identifier': 'NCT04445935'}}}
+Compound::DB00008: {'gene_set': 'coronavirus-related', 'neighbor_type': 'second_hop', 'treatment_data': {'External Clinical Trials': {'Start Date': datetime.datetime(2020, 2, 16, 0, 0), 'Drug': 'Peginterferon alfa-2a', 'Title': 'An open, controlled clinical trial for evaluation of ganovo combined with ritonavir and integrated traditional Chinese and Western medicine in the treatment of novel coronavirus infection (COVID-19)', 'Purpose': 'Treatment', 'Phase': 4, 'Status': 'Recruiting', 'Identifier': 'ChiCTR2000030000'}}}
+Compound::DB00009: {'gene_set': 'coronavirus-related', 'neighbor_type': 'second_hop', 'treatment_data': {'External Clinical Trials': {'Start Date': datetime.datetime(2020, 4, 17, 0, 0), 'Drug': 'Alteplase', 'Title': 'A pilot, open label, phase II clinical trial of nebulised recombinant tissue-Plasminogen Activator (rtPA)in patients with COVID-19 ARDS : The Plasminogen Activator COVID-19 ARDS (PACA) trial - Nebulised rtPA for ARDS due to COVID-19 – The PACA trial', 'Purpose': 'Treatment', 'Phase': 2, 'Status': 'Active Not Recruiting', 'Identifier': 'EUCTR2020-001640-26-GB'}}}
+
+Checking gene attributes:
+Gene::8546: {'gene_set': 'COVID-19', 'neighbor_type': 'seed'}
+Gene::23476: {'gene_set': 'COVID-19', 'neighbor_type': 'seed'}
+Gene::6046: {'gene_set': 'COVID-19', 'neighbor_type': 'seed'}
+Loaded 20020 gene mappings
+Processing ../string-data-full/string-interaction-data/string_interactions_one.tsv: 100%|█| 7072/7072 [00:
+Processing ../string-data-full/string-interaction-data/string_interactions_three.tsv: 100%|█| 5990/5990 [0
+Processing ../string-data-full/string-interaction-data/string_interactions_eleven.tsv: 100%|█| 26/26 [00:0
+Processing ../string-data-full/string-interaction-data/string_interactions_four.tsv: 100%|█| 5854/5854 [00
+Processing ../string-data-full/string-interaction-data/string_interactions_seed.tsv: 100%|█| 284/284 [00:0
+Processing ../string-data-full/string-interaction-data/string_interactions_eight.tsv: 100%|█| 1510/1510 [0
+Processing ../string-data-full/string-interaction-data/string_interactions_five.tsv: 100%|█| 5528/5528 [00
+Processing ../string-data-full/string-interaction-data/string_interactions_ten.tsv: 100%|█| 1584/1584 [00:
+Processing ../string-data-full/string-interaction-data/string_interactions_seven.tsv: 100%|█| 2434/2434 [0
+Processing ../string-data-full/string-interaction-data/string_interactions_six.tsv: 100%|█| 6928/6928 [00:
+Processing ../string-data-full/string-interaction-data/string_interactions_two.tsv: 100%|█| 5936/5936 [00:
+Processing ../string-data-full/string-interaction-data/string_interactions_nine.tsv: 100%|█| 1234/1234 [00
+Processing ../string-data-full/similarity_results.csv: 100%|█████| 55278/55278 [00:01<00:00, 40158.81it/s]
+Added 99164 interactions
+
+Checking example edge attributes:
+
+Gene::6434 -> Gene::27429: {'relation': 'STRING::OTHER::Gene:Gene', 'coexpression': 0.042, 'experimentally_determined_interaction': 0.047, 'automated_textmining': 0.692, 'combined_score': 0.694, 'rmsd_score': 'N/A'}
+Gene::27429 -> Gene::6434: {'relation': 'STRING::OTHER::Gene:Gene', 'coexpression': 0.042, 'experimentally_determined_interaction': 0.047, 'automated_textmining': 0.692, 'combined_score': 0.694, 'rmsd_score': 'N/A'}
+Gene::26092 -> Gene::5577: {'coexpression': 'N/A', 'experimentally_determined_interaction': 'N/A', 'automated_textmining': 'N/A', 'combined_score': 'N/A', 'rmsd_score': 57.85609014602144}
+Coalesced 63527 edges
+Checking example edge attributes:
+
+Edge from DB00004 to MESH:C063419: {'relation': 'DRKG::Treats::Compound:Disease', 'treat_type': 'DRUGBANK::treats::Compound:Disease'}
+Edge from MESH:C004656 to MESH:C537014: {'relation': 'DRKG::Treats::Compound:Disease', 'treat_type': 'GNBR::T::Compound:Disease'}
+Edge from DB00997 to DOID:363: {'relation': 'DRKG::Treats::Compound:Disease', 'treat_type': 'Hetionet::CtD::Compound:Disease'}
